@@ -7,17 +7,26 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans JP", sans-serif;
+    min-width: 1120px;
+    min-height: 750px;
+}
+
+.main_header {
+    position: relative;
 }
 
 .main_wrapper {
+    height: 100px;
     display: flex;
+    background-color: rgb(218, 238, 234);
 }
 
 .companyName {
     width: 30%;
     font-size: 1.5rem;
     color: rgb(36, 19, 110);
-    margin: 50px 0 0 25px;
+    text-shadow: 2px 2px 3px rgb(18, 8, 59);
+    margin: 40px 0 0 25px;
     transition: 1s;
     position: relative;
 }
@@ -35,17 +44,24 @@ body {
 }
 
 .main_header ul {
-    padding: 30px 0;
-    background-color: rgb(25, 201, 34);
-    color: white;
     width: 70%;
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
 .main_header ul li {
-    margin: 0 20px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* font-size: 100%; */
+    background-color: rgb(25, 201, 34);
+    /* padding: 0 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.3s;
 }
 
@@ -55,4 +71,20 @@ body {
 }
 
 .main_header img {
+    width: 100vw;
+    min-height: 750px;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+}
+
+.main_header p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    width: 1000px;
+    color: #fff;
+    text-shadow: black 3px 3px 3px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
 }
