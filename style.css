@@ -77,6 +77,27 @@ body {
     object-fit: cover;
 }
 
+.main_header .hamberger_p {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translateX(0);
+    display: none;
+}
+.main_header .hamberger_p span{
+    color: rgb(25, 201, 34);
+    text-shadow: none;
+    margin-top: 15px;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.main_header .hamberger_p :hover{
+    color: rgb(10, 100, 15);
+    cursor: pointer;
+}
+
 .main_header p {
     font-size: 1.2rem;
     letter-spacing: 3px;
@@ -87,4 +108,56 @@ body {
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width:1120px) {
+    html {
+        font-size: 10px;
+    }
+
+    body {
+        min-width: 300px;
+        /* min-height: 750px; */
+    }
+
+    .companyName {
+        width: 70%;
+    }
+
+    .main_header p {
+        width: 80%;
+    }
+
+    .main_header ul {
+        display: none;
+    }
+
+    /* active時メニュー展開 */
+    .main_header ul.active {
+        background-color: antiquewhite;
+        position: absolute;
+        top: 100px;
+        height: calc(100vh - 100px);
+        width: 90%;
+        display: block;
+        z-index: 50;
+        opacity: 0.8;
+    }
+
+    .main_header ul li {
+        font-size: 2rem;
+        height:calc((100vh - 100px) / 6);
+    }
+
+
+    /* active時メニュー展開 ここまで*/
+
+    .main_header img {
+        object-fit:cover;
+        object-position: 40% 50%;
+    }
+
+    .main_header .hamberger_p {
+        display: block;
+    }
 }
