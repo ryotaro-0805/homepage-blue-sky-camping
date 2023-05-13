@@ -6,11 +6,18 @@ const handleTitle = () => {
 
 getTitle[0].addEventListener('click', handleTitle);
 
-const getMenu=document.getElementById('hamberger');
-const getUl=document.getElementById('companyNameUl');
+const getMenu = document.getElementById('hamberger');
+const getUl = document.getElementById('companyNameUl');
+const handleClose = () => {
+    getUl.classList.remove('active');
+};
 
 
-const handleClick=()=>{
+const handleClick = () => {
     getUl.classList.toggle('active');
+    if (getUl.classList.value === 'active') {
+        window.addEventListener('scroll', handleClose)
+    };
 }
-getMenu.addEventListener('click',handleClick);
+getMenu.addEventListener('click', handleClick);
+
