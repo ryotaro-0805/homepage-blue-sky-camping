@@ -227,6 +227,10 @@ a {
     font-size: 1.2rem;
 }
 
+.sentence_wrapper h3 {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 1120px) {
     .top_inner_wrapper {
         display: block;
@@ -247,4 +251,27 @@ a {
     width: 100%;
     padding-top: 30px;
     margin: 0 auto;
+}
+
+.map_wrapper img {
+    width: 90%;
+}
+
+.map_wrapper h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.map_inner_div {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+@media screen and (max-width: 1120px) {
+    .map_wrapper p {
+        text-align: center;
+    }
+    .map_inner_div {
+        display: block;
+    }
 }
