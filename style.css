@@ -28,6 +28,13 @@ a {
     text-decoration: none;
 }
 
+.thanks_p.thanks_p {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
 .main_header {
     position: relative;
     overflow: hidden;
@@ -46,11 +53,14 @@ a {
 .companyName {
     width: 30%;
     font-size: 1.5rem;
-    color: rgb(36, 19, 110);
-    text-shadow: 1px 1px 2px rgb(18, 8, 59);
     margin: 30px 0 0 25px;
     transition: 0.3s;
     position: relative;
+}
+
+.companyName a {
+    color: #228b22;
+    text-shadow: 1px 1px 2px #153b15;
 }
 
 .companyName span {
@@ -247,39 +257,59 @@ a {
     padding: 30px 0 5px 5px;
 }
 
-.map_inner_div img {
-    width: 100%;
-    /* padding-top: 0px; */
-    margin: 0 auto;
-}
-
-.map_wrapper img {
-    width: 90%;
+.map_wrapper {
+    background-image: url(/img/blue-back.jpg);
+    background-size: cover;
 }
 
 .map_wrapper h3 {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.map_inner_wrapper img {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.inner_wrapper_mini img {
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 .map_inner_div {
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
+    width: 90%;
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 3fr 2fr;
 }
 
-.map_inner_div p{
+.map_inner_div p {
     margin-top: 0px;
-    padding: 0 30px;
+    padding: 150px 10px 0 10px;
     text-align: left;
-
 }
 
 @media screen and (max-width: 1120px) {
-    .map_wrapper p {
-        /* text-align: center; */
+    .map_inner_wrapper img {
+        width: 100%;
     }
+
     .map_inner_div {
+        width: 100%;
         display: block;
+    }
+
+    .map_inner_div p {
+        padding: 20px 10px;
+    }
+
+    .inner_wrapper_mini img {
+        width: 100%;
+        height: 100%;
     }
 }
