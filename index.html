@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="/img/blue-back.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
@@ -34,7 +35,28 @@
                 <span id="menu" class="material-symbols-outlined">menu</span>
             </p>
         </div>
-        <img src="img/main-pic.jpg" alt="トップページ" srcset="">
+        <!-- <img src="img/main-pic.jpg" alt="トップページ" srcset=""> -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/img/main-pic.jpg" alt="main-pic" srcset=""></div>
+                <div class="swiper-slide"><img src="/img/main-pic2.jpg" alt="main-pic2" srcset=""></div>
+                <div class="swiper-slide"><img src="/img/main-pic3.jpg" alt="main-pic3" srcset=""></div>
+                <div class="swiper-slide"><img src="/img/main-pic4.jpg" alt="main-pic4" srcset=""></div>
+                <div class="swiper-slide"><img src="/img/main-pic5.jpg" alt="main-pic5" srcset=""></div>
+                <div class="swiper-slide"><img src="/img/main-pic6.jpg" alt="main-pic6" srcset=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
         <p>ザ・ブルースカイキャンプ場へようこそ！<br>自然と一体化した贅沢な休暇をお探しの方にぴったりの場所です。<br>ここでは、豊かな緑と青空の下でゆったりとした時間を過ごせます。<br>朝は鳥のさえずりで目覚め、夜は満点の星空を眺めながら、心身ともにリフレッシュしましょう。<br>豊富な設備とアクティビティも用意しており、家族や友人との素晴らしい思い出作りに最適です。<br>ぜひ、ザ・ブルースカイキャンプ場で自然と触れ合いながら、特別な時間をお過ごしください。
         </p>
     </header>
@@ -59,6 +81,7 @@
                         この湖畔のキャンプ場は、都会の喧騒から離れて、自然の中でのんびりと時間を過ごすための理想的な場所です。ここでは、日々の忙しさから解放され、自然の美しさと静けさを満喫することができます。</p>
                 </div>
             </div>
+            <a href="#" class="btn-square-emboss">キャンプ場の特色を詳しく見てみる</a>
         </div>
 
         <div class="map_div">
@@ -165,7 +188,7 @@
 
     </main>
     <footer></footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
