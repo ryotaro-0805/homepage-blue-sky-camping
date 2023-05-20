@@ -31,7 +31,7 @@ a {
 .thanks_p.thanks_p {
     font-size: 0.8rem;
     margin: 0;
-    padding: 0 0 50px 0;
+    padding: 0 0 5px 0;
     text-align: center;
 }
 
@@ -212,7 +212,7 @@ a {
 
 .top_div {
     background-color: var(--main-color);
-    padding: 50px 0 0 10px;
+    padding: 50px 0 0 15px;
 }
 
 /* キャンプ場の特色 */
@@ -254,7 +254,15 @@ a {
 
 /* 施設の案内 */
 .map_div {
-    padding: 30px 0 5px 5px;
+    padding: 30px 0 5px 0px;
+}
+
+.map_div h2 {
+    padding-left: 20px;
+}
+
+.map_div p {
+    padding-left: 20px;
 }
 
 .map_wrapper {
@@ -282,7 +290,7 @@ a {
 }
 
 .map_inner_div {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
     width: 90%;
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -290,7 +298,7 @@ a {
 
 .map_inner_div p {
     margin-top: 0px;
-    padding: 150px 10px 0 10px;
+    padding: 80px 10px 0 10px;
     text-align: left;
 }
 
