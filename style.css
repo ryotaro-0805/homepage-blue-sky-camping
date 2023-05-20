@@ -162,7 +162,7 @@ a {
         transform: translateX(100%);
         /* background-color: antiquewhite; */
         position: absolute;
-        top: 100px;
+        top: 80px;
         right: 0;
         height: calc(100vh - 100px);
         width: 90%;
