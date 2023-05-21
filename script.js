@@ -1,3 +1,12 @@
+const getBody = document.getElementById('all_div');
+const getLoad = document.getElementById('loading');
+const loadAnime = () => {
+    setTimeout(() => {
+        getBody.style.opacity = 1;
+        getLoad.style.display = 'none';
+    }, 1000);
+}
+document.addEventListener('DOMContentLoaded', loadAnime);
 const getMenu = document.getElementById('hamberger');
 const getUl = document.getElementById('companyNameUl');
 const handleClose = () => {
@@ -27,8 +36,8 @@ const swiper = new Swiper('.swiper', {
     speed: 1500,
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
     },
+    el: '.swiper-pagination',
 
     // Navigation arrows
     navigation: {

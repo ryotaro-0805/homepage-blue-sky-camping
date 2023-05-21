@@ -24,6 +24,20 @@ body {
     min-height: 750px;
 }
 
+#loading {
+    width: 100vw;
+    height: 100vh;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_div {
+    opacity: 0;
+    transition: 2s;
+}
+
 a {
     text-decoration: none;
 }
