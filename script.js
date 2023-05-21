@@ -36,8 +36,8 @@ const swiper = new Swiper('.swiper', {
     speed: 1500,
     // If we need pagination
     pagination: {
+        el: '.swiper-pagination',
     },
-    el: '.swiper-pagination',
 
     // Navigation arrows
     navigation: {
