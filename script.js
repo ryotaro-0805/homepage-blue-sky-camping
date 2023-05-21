@@ -55,9 +55,10 @@ const swiper = new Swiper('.swiper', {
 //   よくあるご質問　アコーディオン
 const getQuestion = document.querySelectorAll('.question');
 const getAnswer = document.querySelectorAll('.answer');
-getQuestion[0].addEventListener('click', (e) => {
-    e.target.nextElementSibling.classList.toggle('active');
-    console.log(e.target);
+getQuestion.forEach((question) => {
+    question.addEventListener('click', (e) => {
+        e.target.nextElementSibling.classList.toggle('active');
+    });
 });
 console.log(getQuestion);
 console.log(getAnswer);
