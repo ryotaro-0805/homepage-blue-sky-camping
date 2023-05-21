@@ -27,7 +27,7 @@ body {
 #loading {
     width: 100vw;
     height: 100vh;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,7 +381,7 @@ a {
 /* お知らせ */
 .news_div {
     background-color: var(--main-color);
-    padding: 50px 0 0 15px;
+    padding: 50px 0 100px 15px;
     overflow: hidden;
 }
 
@@ -420,6 +420,73 @@ a {
 }
 
 /* お知らせ ここまで*/
+
+/* アクセス */
+
+.access_inner_div {
+    padding: 20px 15px;
+    background-image: url(/img/access-pic.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+
+.access_inner_div::before {
+    background: inherit;
+    top: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+.access_inner_div h2 {
+    font-size: 2rem;
+}
+
+.access_inner_p {
+    font-weight: bold;
+}
+
+.access_inner_p p {
+    margin-bottom: 10px;
+}
+
+iframe {
+    display: flex;
+}
+
+/* アクセス ここまで*/
+
+/* よくあるご質問 */
+.faq_div {
+    background-color: var(--main-color);
+    padding: 50px 0 100px 15px;
+    overflow: hidden;
+}
+
+.question {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.answer {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.answer.active {
+    display: block;
+}
+
+/* よくあるご質問 ここまで*/
 
 footer {
     background-color: var(--main-color);

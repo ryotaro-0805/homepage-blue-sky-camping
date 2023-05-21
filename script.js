@@ -50,4 +50,16 @@ const swiper = new Swiper('.swiper', {
     //     el: '.swiper-scrollbar',
     // },
 });
-  // swiper ここまで
+// swiper ここまで
+
+//   よくあるご質問　アコーディオン
+const getQuestion = document.querySelectorAll('.question');
+const getAnswer = document.querySelectorAll('.answer');
+getQuestion[0].addEventListener('click', (e) => {
+    e.target.nextElementSibling.classList.toggle('active');
+    console.log(e.target);
+});
+console.log(getQuestion);
+console.log(getAnswer);
+
+//   よくあるご質問　アコーディオン　ここまで
