@@ -60,7 +60,36 @@ getQuestion.forEach((question) => {
         e.target.nextElementSibling.classList.toggle('active');
     });
 });
-console.log(getQuestion);
-console.log(getAnswer);
 
 //   よくあるご質問　アコーディオン　ここまで
+
+// intersectionovserverで出現時にアニメーションをつける
+
+const getTarget1 = document.querySelectorAll('.changeWrapper');
+const getTarget2 = document.querySelectorAll('.changeMain, .changeChild');
+
+console.log(getTarget2);
+const options1 = {
+    threshold: .05,
+}
+const options2 = {
+    threshold: .3,
+}
+const callback = (entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}
+getTarget1.forEach((target) => {
+    const observer1 = new IntersectionObserver(callback, options1);
+    observer1.observe(target);
+});
+
+getTarget2.forEach((target) => {
+    const observer2 = new IntersectionObserver(callback, options2);
+    observer2.observe(target);
+});
+// intersectionovserverで出現時にアニメーションをつける　ここまで
+

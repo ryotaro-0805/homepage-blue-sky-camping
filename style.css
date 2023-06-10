@@ -689,3 +689,36 @@ footer {
     text-align: center;
     padding: 5px;
 }
+
+/* intersectionobserverによるアニメーション */
+/* チェンジメインとチェンジ子を作って時間差で現れるようにするところから */
+.changeWrapper {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: 1s;
+}
+.changeWrapper.active {
+    transform: scale(1);
+    opacity: 1;
+}
+.changeMain {
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: 1s;
+}
+.changeMain.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.changeChild {
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: 1.5s;
+}
+.changeChild.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* intersectionobserverによるアニメーション　ここまで */
