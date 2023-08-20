@@ -581,7 +581,7 @@ iframe {
     font-family: "Source Sans Pro", arial, sans-serif;
     border: 1px solid #cecece;
     background: #d7d7d7;
-    color: #fafafa;
+    color: #000000;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -594,6 +594,12 @@ iframe {
     width: 80%;
     max-width: 600px;
 }
+
+input:focus,
+textarea:focus {
+    outline: 1px solid green;
+}
+
 ::-webkit-input-placeholder {
     color: #fafafa;
 }

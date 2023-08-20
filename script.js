@@ -6,6 +6,7 @@ const loadAnime = () => {
         getLoad.style.display = 'none';
     }, 1000);
 }
+
 document.addEventListener('DOMContentLoaded', loadAnime);
 const getMenu = document.getElementById('hamberger');
 const getUl = document.getElementById('companyNameUl');
@@ -14,7 +15,6 @@ const handleClose = () => {
     getIcon.textContent = 'menu';
 };
 const getIcon = document.getElementById('menu');
-
 const handleClick = () => {
     getUl.classList.toggle('active');
     if (getUl.classList.value === 'active') {
