@@ -1,0 +1,5 @@
+{
+  "rewrites":[
+    {"source":"https://homepage-blue-sky-camping.vercel.app/" , "destination":"https://xs622417.xsrv.jp/blue-sky-camping/"}
+  ]
+}
