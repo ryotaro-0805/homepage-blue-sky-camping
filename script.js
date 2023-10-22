@@ -1,4 +1,16 @@
+sessionStorage.setItem('key','value');
+const getText=sessionStorage.getItem('key');
+console.log(getText);
+
+const valueChecher=(key)=>{
+    return sessionStorage.getItem(key)===null;
+}
+
+console.log(valueChecher());
+
+
 const getBody = document.getElementById('all_div');
+
 const getLoad = document.getElementById('loading');
 const loadAnime = () => {
     setTimeout(() => {
@@ -7,7 +19,11 @@ const loadAnime = () => {
     }, 1000);
 }
 
-document.addEventListener('DOMContentLoaded', loadAnime);
+if (valueChecher){
+    document.addEventListener('DOMContentLoaded', loadAnime);
+    
+}
+
 const getMenu = document.getElementById('hamberger');
 const getUl = document.getElementById('companyNameUl');
 const handleClose = () => {
